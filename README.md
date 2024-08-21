@@ -1,27 +1,21 @@
-# Virtualscroll
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+## Sample Component with Virtual Scroll
+This Angular component demonstrates the implementation of virtual scrolling using the Angular CDK's cdk-virtual-scroll-viewport. The project is built with Angular 17.2.3 and node version is 17.2.3.
 
-## Development server
+## Features
+Virtual Scrolling: Efficiently renders a large list of items by only rendering the items currently visible in the viewport, reducing DOM load and improving performance.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
+Clone the project from the repository and do the npm install and run the command ng serve.
 
-## Code scaffolding
+## Code Explanation
+sample.component.ts
+Imports:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ScrollingModule: Imported from @angular/cdk/scrolling to enable virtual scrolling.
 
-## Build
+## Component:
+SampleComponent: Defines the logic for the virtual scroll component.
+items: An array holding the data to be displayed in the scrollable viewport.
+ngOnInit(): Populates the items array with 1000 items labeled as Item #0, Item #1, ..., Item #999.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
